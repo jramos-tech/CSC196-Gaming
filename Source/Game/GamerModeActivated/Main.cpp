@@ -1,9 +1,14 @@
+#include "Core/Random.h"
+#include "Core/FileI0.h"
 #include <iostream>
+using namespace std;
 
 
 int main() {
-#ifdef _DEBUG
-	std::cout << "debug\n";
-#endif
-	std::cout << "Hello everybody my name is Markiplier and welcome back to another Five nights at Freddy";
+
+	cout << F::getFilePath() << endl;
+
+	R::seedRandom((unsigned int)time(nullptr));
+	for(int i = 0; i < 30; i++)
+	cout << R::random(20, 30) << endl;
 }
