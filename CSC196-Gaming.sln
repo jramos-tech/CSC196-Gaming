@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GamerModeActivated", "Sourc
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Core", "Source\Engine\Core\Core.vcxproj", "{90CB9C8C-07F6-46F4-9116-9E2CC3B28925}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Render", "Source\Engine\Render\Render.vcxproj", "{733E4D55-A619-4848-9608-97D364430EE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -35,6 +37,14 @@ Global
 		{90CB9C8C-07F6-46F4-9116-9E2CC3B28925}.Release|x64.Build.0 = Release|x64
 		{90CB9C8C-07F6-46F4-9116-9E2CC3B28925}.Release|x86.ActiveCfg = Release|Win32
 		{90CB9C8C-07F6-46F4-9116-9E2CC3B28925}.Release|x86.Build.0 = Release|Win32
+		{733E4D55-A619-4848-9608-97D364430EE2}.Debug|x64.ActiveCfg = Debug|x64
+		{733E4D55-A619-4848-9608-97D364430EE2}.Debug|x64.Build.0 = Debug|x64
+		{733E4D55-A619-4848-9608-97D364430EE2}.Debug|x86.ActiveCfg = Debug|Win32
+		{733E4D55-A619-4848-9608-97D364430EE2}.Debug|x86.Build.0 = Debug|Win32
+		{733E4D55-A619-4848-9608-97D364430EE2}.Release|x64.ActiveCfg = Release|x64
+		{733E4D55-A619-4848-9608-97D364430EE2}.Release|x64.Build.0 = Release|x64
+		{733E4D55-A619-4848-9608-97D364430EE2}.Release|x86.ActiveCfg = Release|Win32
+		{733E4D55-A619-4848-9608-97D364430EE2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +52,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A53648EB-A6DC-4534-9780-B165153EAF38} = {732872BB-146F-43C0-9A49-D54B021398EE}
 		{90CB9C8C-07F6-46F4-9116-9E2CC3B28925} = {591AC1FC-5510-45D6-A18D-0A4342BF9865}
+		{733E4D55-A619-4848-9608-97D364430EE2} = {591AC1FC-5510-45D6-A18D-0A4342BF9865}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C3C96BDC-D205-467D-A768-61BB1B74A0E4}
