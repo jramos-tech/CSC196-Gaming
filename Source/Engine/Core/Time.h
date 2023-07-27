@@ -12,9 +12,11 @@ namespace kiko
 
 	public:
 		Time() : 
-			m_startTime{ clock::now() }
+			m_startTime{ clock::now() },
+			m_frameTime{ clock::now() }
 		{}
 
+		void Tick();
 		void Reset() { m_startTime = clock::now(); }
 
 		clock_rep GetElapsedNanoseconds();
@@ -22,7 +24,19 @@ namespace kiko
 		clock_rep GetElapsedMilliseconds();
 		float GetElapsedSeconds();
 
+		float getTime() const { return m_time; }
+		float getDeltaTime() const { return m_deltaTime; }
+		float GetTimeScale() const { return m_timeScale; }
+		float GetUnscaledDeltaTime() const { return m_deltaTime; }
+		void SetTimeScale(float timeScale){m_timeScale = timeScale;}
+
 	private:
+		float m_time;
+		float m_deltaTime;
+		float m_timeScale = 1;
+
 		clock::time_point m_startTime;
+		clock::time_point m_frameTime;
 	};
+	extern Time g_time;
 }

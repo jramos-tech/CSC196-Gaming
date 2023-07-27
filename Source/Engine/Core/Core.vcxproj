@@ -143,11 +143,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Color.h" />
     <ClInclude Include="Core.h" />
     <ClInclude Include="FileI0.h" />
+    <ClInclude Include="MathUtils.h" />
     <ClInclude Include="Memory.h" />
     <ClInclude Include="Random.h" />
     <ClInclude Include="Time.h" />
+    <ClInclude Include="Transform.h" />
     <ClInclude Include="Vector2.h" />
   </ItemGroup>
   <ItemGroup>

@@ -1,11 +1,17 @@
 #include "Renderer.h"
-namespace R{
+#include "SDL2-2.28.0/include/SDL_ttf.h"
+namespace Sc{
+	Render g_render;
+
 	bool Render::initialize(){
 		SDL_Init(SDL_INIT_VIDEO);
+		TTF_Init();
 		return true;
 	}
 	void Render::shutdown(){
-
+		SDL_DestroyRenderer(m_renderer);
+		SDL_DestroyWindow(m_window);
+		TTF_Quit();
 	}
 	void Render::createWindow(const std::string& title, int width, int height){
 		m_width = width;
@@ -19,7 +25,7 @@ namespace R{
 	void Render::endFrame(){
 		SDL_RenderPresent(m_renderer);
 	}
-	void Render::setColor(int r, int g, int b, int a){
+	void Render::setColor(uint8_t r, uint8_t g, uint8_t b, uint8_t a){
 		SDL_SetRenderDrawColor(m_renderer, r, g, b, a);
 	}
 	void Render::drawLine(int x1, int y1, int x2, int y2){

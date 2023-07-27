@@ -167,11 +167,21 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="SpaceWars.cpp" />
+    <ClCompile Include="Weapon.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Engine\Audio\Audio.vcxproj">
+      <Project>{ea43cd08-977d-4341-8d0a-853a64acbf1b}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\..\Engine\Core\Core.vcxproj">
       <Project>{90cb9c8c-07f6-46f4-9116-9e2cc3b28925}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Engine\Framework\Framework.vcxproj">
+      <Project>{20defc8c-2f86-4499-bcab-c79fa0b8a9ce}</Project>
     </ProjectReference>
     <ProjectReference Include="..\..\Engine\Input\Input.vcxproj">
       <Project>{a2ae1037-6b26-4020-8e12-03fbae1bfb80}</Project>
@@ -179,6 +189,12 @@
     <ProjectReference Include="..\..\Engine\Render\Render.vcxproj">
       <Project>{733e4d55-a619-4848-9608-97d364430ee2}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="SpaceWars.h" />
+    <ClInclude Include="Weapon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
